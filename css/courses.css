@@ -1,0 +1,93 @@
+.courses{
+    margin-top: 2rem;
+}
+
+.courses h2{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.switcher{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switcher button{
+    margin-right: 1rem;
+    background-color: var(--color-bg1);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+ .switcher .active{
+    background-color: var(--color-primary);
+}
+
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+
+form input{
+    width: 30rem;
+    padding: 0.8rem 3rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    box-shadow:0 1rem 2rem rgba(0, 0, 0, 0.2) ;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+form input::placeholder{
+    color: var(--color-light);
+    transition: 0.5s ease-in-out ;
+    -webkit-transition: 0.5s ease-in-out ;
+    -moz-transition: 0.5s ease-in-out ;
+    -ms-transition: 0.5s ease-in-out ;
+    -o-transition: 0.5s ease-in-out ;
+}
+form input:focus::placeholder{
+  opacity: 0;
+}
+
+form i{
+    position: absolute;
+    transform: translateX(-210px);
+    cursor: pointer;
+    -webkit-transform: translateX(-210px);
+    -moz-transform: translateX(-210px);
+    -ms-transform: translateX(-210px);
+    -o-transform: translateX(-210px);
+}
+
+@media   (max-width: 600px){
+    .switcher button{
+        margin-right: 0.2rem;
+        padding:0.9rem 1rem ;
+    }
+    form input{
+    width: 17rem;
+    }
+    form i{
+        transform: translateX(-112px);
+        -webkit-transform: translateX(-112px);
+        -moz-transform: translateX(-112px);
+        -ms-transform: translateX(-112px);
+        -o-transform: translateX(-112px);
+}
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/courses.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Work+Sans:ital,wght@0,100;0,500;0,700;0,800;1,100;1,200&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+      </div>
+    <!--==================== Start Navbar ===================-->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html">School</a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!--==================== End Navbar ===================-->
+    <!--==================== Start Popular Course ===================-->
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <form>
+            <i class="uil-search"></i>
+            <input onkeyup="search()" class="course-input"  type="text" placeholder="Search for course...">
+        </form>
+       
+        <div class="switcher">
+            <button data-cat =".all" class="btn active">All</button>
+            <button data-cat =".web" class="btn ">Web</button>
+            <button data-cat =".design" class="btn ">Design</button>
+            <button data-cat =".marketing" class="btn ">Marketing</button>
+        </div>
+        <div class="container courses_container">
+            <article class="course all design">
+                <div class="course_img">
+                    <img src="images/course1.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info design">
+                    <h4 class="title">Ui&Ux Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img  src="images/course2.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Frontend web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all design">
+                <div class="course_img">
+                    <img  src="images/course3.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Ui&Ux Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all design">
+                <div class="course_img">
+                    <img src="images/course4.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Graphic Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all marketing">
+                <div class="course_img">
+                    <img  src="images/course5.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Search engine marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img src="images/course6.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Html ,Css, Js</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img web ">
+                    <img  src="images/course7.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Full Stack web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img  src="images/course8.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">React (Next)</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img  src="images/course9.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Full Stack web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all marketing">
+                <div class="course_img">
+                    <img  src="images/course10.jpg" alt="course1.jpg">
+                </div> 
+                <div class="course_info">
+                    <h4 class="title">Email marketing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all design">
+                <div class="course_img">
+                    <img src="images/course11.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Design Ps</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all marketing">
+                <div  class="course_img">
+                    <img src="images/course12.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Social media marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img  src="images/course13.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Backend web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img src="images/course14.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Html ,Css</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all design">
+                <div class="course_img">
+                    <img src="images/course15.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title"> Ui&Ux Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img  src="images/course16.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Full Stack web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all marketing">
+                <div class="course_img">
+                    <img  src="images/course17.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course all web">
+                <div class="course_img">
+                    <img src="images/course18.jpg" alt="course1.jpg">
+                </div>
+                <div class="course_info">
+                    <h4 class="title">Frontend web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit harum hic repellat
+                        illo est!
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+          
+        </div>
+    </section>
+    <!--==================== End Popular Course ===================-->
+
+
+    <!--===================  Start Footer  =====================-->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>School</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, minus.</p>
+            </div>
+            <div class="footer_2">
+                <h4>PermaLinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+99 999 999 999</p>
+                    <p>lorem.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-link-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy;</small>
+        </div>
+    </footer>
+    <!--===================  End Footer  =====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>
